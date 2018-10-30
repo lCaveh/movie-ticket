@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie tickets</title>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie tickets</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <hr>
+          <h2>Pick a movie</h2>
+          <form id="new-ticket">
+            <div class="form-group">
+              <label for="new-movie">What movie do you want to watch?</label>
+              <select class="form-control" id="new-movie">
+                <option value='venom'>Venom</option>
+                <option value='bohemian'>Bohemian Rapsody</option>
+                <option value='halloween'>Halloween</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-time">When do you want to watch the movie</label>
+              <select class="form-control" id="new-time">
+                <option value='morning'>11.00am</option>
+                <option value='afternoon'>4.00pm</option>
+                <option value='evening'>8.00pm</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-age">What's your age?</label>
+              <select class="form-control" id="new-age">
+                <option value='minor'>Under 18 years</option>
+                <option value='adult'>From 18 years to 65 years</option>
+                <option value='senior'>Over 65 years</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-primary">Add</button>
+          </form>
+          <<hr>
+          <h2>Ticket:</h2>
+          <ul id="tickets">
+          </ul>
+          <p class="ticket-price">
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div id="show-ticket">
+            <p>Movie: <span class="movie"></span></p>
+            <p>Time: <span class="time"></span></p>
+            <p>Age: <span class="age"></span></p>
+            <p>Ticket Price: <span class="price"></span></p>
+
+            <div id="buttons">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
